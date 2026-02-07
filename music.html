@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="icon" href="./images/icon.webp">
+  <link rel="stylesheet" href="./music.css">
+</head>
+<body>
+  <div class="music-player">
+    
+    <!-- Left: Playing Song Thumbnail -->
+    <div class="left">
+      <img src="images/concert.jpg" alt="Current Song">
+    </div>
+    
+    <!-- Middle: Song Details + Controls -->
+    <div class="middle">
+      <h2 class="song-title">We Are Going To Be Ok (Master)</h2>
+      <p class="artist">No Spirit x Jhove • 2022</p>
+      
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <span class="current-time">0:06</span>
+        <input type="range" class="progress-bar" value="6" max="172">
+        <span class="duration">2:52</span>
+      </div>
+      
+      <!-- Controls -->
+      <div class="controls">
+        <button class="btn">⟳</button>
+        <button class="btn">⏮</button>
+        <button class="btn play">▶</button>
+        <button class="btn">⏭</button>
+        <button class="btn">🔀</button>
+      </div>
+      
+      <!-- Volume -->
+      <div class="volume">
+        🔊 <input type="range" class="volume-bar" value="70" max="100">
+      </div>
+    </div>
+    
+    <!-- Right: Next Songs -->
+    <div class="right">
+      <div class="next-songs">
+        <img src="./images/OIP.webp" alt="Song 1">
+        <img src="./images/img1.webp" alt="Song 2">
+        <img src="./images/img3.jpg" alt="Song 3">
+        <img src="" alt="song 4">
+      </div>
+    </div>
+    
+  </div>
+  <script src="./music.js"></script>
+</body>
+</html>
